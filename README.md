@@ -12,11 +12,37 @@ Este é um projeto simples criado com FastAPI para demonstrar uma API básica co
 
 O projeto funciona diretamente com Python 3 sem necessidade de ambiente virtual.
 
-**Nota:** Se você quiser usar um ambiente virtual, pode criar um:
+### 🔧 Setup Automático
+Execute o script de setup para verificar e instalar dependências:
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # No Windows: venv\Scripts\activate
-pip install -r requirements.txt
+./setup.sh
+```
+
+### 📦 Instalação Manual
+Se precisar instalar as dependências manualmente:
+
+**Opção 1 - Instalar no sistema (recomendado):**
+```bash
+python3 -m pip install --break-system-packages fastapi uvicorn[standard]
+```
+
+**Opção 2 - Instalar para o usuário:**
+```bash
+python3 -m pip install --user fastapi uvicorn[standard]
+```
+
+**Opção 3 - Usar pacotes do sistema:**
+```bash
+sudo apt install python3-fastapi python3-uvicorn
+```
+
+### 🌍 Ambiente Virtual (Opcional)
+Se quiser usar um ambiente virtual, crie em outro diretório:
+```bash
+cd /tmp
+python3 -m venv fastapi_env
+source fastapi_env/bin/activate
+pip install -r /caminho/para/seu/projeto/requirements.txt
 ```
 
 ## Como executar
@@ -70,6 +96,7 @@ genai-cursor-primeiro-projeto/
 ├── main.py              # Arquivo principal da aplicação
 ├── requirements.txt     # Dependências do projeto (opcional)
 ├── run.sh              # Script de execução
+├── setup.sh            # Script de configuração
 ├── README.md           # Este arquivo
 ├── GITHUB_SETUP.md     # Instruções para GitHub
 └── .gitignore          # Arquivos ignorados pelo Git
