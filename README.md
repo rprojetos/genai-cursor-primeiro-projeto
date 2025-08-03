@@ -1,13 +1,12 @@
-# Meu Primeiro Projeto FastAPI
+# Hello World API
 
-Este é um projeto simples criado com FastAPI para demonstrar as funcionalidades básicas de uma API REST.
+Este é um projeto simples criado com FastAPI para demonstrar uma API básica com rota hello-world.
 
 ## Funcionalidades
 
-- ✅ CRUD completo de itens
-- ✅ Validação de dados com Pydantic
+- ✅ Endpoint hello-world simples
 - ✅ Documentação automática da API
-- ✅ Endpoints de saúde da aplicação
+- ✅ Endpoint de saúde da aplicação
 
 ## Instalação
 
@@ -36,12 +35,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 ## Endpoints disponíveis
 
-- `GET /` - Página inicial com informações da API
-- `GET /items` - Listar todos os itens
-- `GET /items/{id}` - Buscar item por ID
-- `POST /items` - Criar novo item
-- `PUT /items/{id}` - Atualizar item existente
-- `DELETE /items/{id}` - Deletar item
+- `GET /` - Endpoint hello-world
 - `GET /health` - Verificar saúde da aplicação
 
 ## Documentação da API
@@ -52,21 +46,14 @@ Após executar o servidor, acesse:
 
 ## Exemplo de uso
 
-### Criar um item
+### Testar o endpoint hello-world
 ```bash
-curl -X POST "http://localhost:8000/items" \
-     -H "Content-Type: application/json" \
-     -d '{
-       "nome": "Produto Teste",
-       "descricao": "Um produto de exemplo",
-       "preco": 29.99,
-       "disponivel": true
-     }'
+curl -X GET "http://localhost:8000/"
 ```
 
-### Listar todos os itens
+### Verificar saúde da aplicação
 ```bash
-curl -X GET "http://localhost:8000/items"
+curl -X GET "http://localhost:8000/health"
 ```
 
 ## Estrutura do projeto
@@ -81,5 +68,4 @@ primeiro_projeto/
 ## Tecnologias utilizadas
 
 - **FastAPI**: Framework web moderno para APIs
-- **Pydantic**: Validação de dados
 - **Uvicorn**: Servidor ASGI 
