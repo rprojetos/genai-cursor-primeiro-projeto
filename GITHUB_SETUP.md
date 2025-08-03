@@ -5,7 +5,7 @@
 ### 1. Criar um repositório no GitHub
 1. Acesse [github.com](https://github.com)
 2. Clique em "New repository" ou "Novo repositório"
-3. Dê um nome ao repositório (ex: `primeiro-projeto-fastapi`)
+3. Dê um nome ao repositório (ex: `hello-world-api`)
 4. Deixe como público ou privado (sua escolha)
 5. **NÃO** inicialize com README, .gitignore ou license (já temos esses arquivos)
 6. Clique em "Create repository"
@@ -22,10 +22,10 @@ git push -u origin main
 ```
 
 ### 3. Exemplo prático
-Se seu usuário for `joaosilva` e o repositório se chamar `primeiro-projeto-fastapi`:
+Se seu usuário for `joaosilva` e o repositório se chamar `hello-world-api`:
 
 ```bash
-git remote add origin https://github.com/joaosilva/primeiro-projeto-fastapi.git
+git remote add origin https://github.com/joaosilva/hello-world-api.git
 git push -u origin main
 ```
 
@@ -37,11 +37,10 @@ Após o push, você pode:
 
 ## Estrutura do projeto no GitHub:
 ```
-primeiro-projeto-fastapi/
-├── main.py              # Aplicação FastAPI
+hello-world-api/
+├── main.py              # Aplicação FastAPI simplificada
 ├── requirements.txt     # Dependências
 ├── README.md           # Documentação
-├── test_api.py         # Script de teste
 ├── .gitignore          # Arquivos ignorados
 └── GITHUB_SETUP.md     # Este arquivo
 ```
