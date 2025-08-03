@@ -23,12 +23,17 @@ pip install -r requirements.txt
 
 ## Como executar
 
-### Opção 1: Executar diretamente
+### Opção 1: Usar o script de execução (Recomendado)
 ```bash
-python main.py
+./run.sh
 ```
 
-### Opção 2: Usar uvicorn
+### Opção 2: Executar diretamente
+```bash
+python3 main.py
+```
+
+### Opção 3: Usar uvicorn
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
@@ -56,13 +61,20 @@ curl -X GET "http://localhost:8000/"
 curl -X GET "http://localhost:8000/health"
 ```
 
+### Acessar a documentação interativa
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+
 ## Estrutura do projeto
 
 ```
-primeiro_projeto/
+genai-cursor-primeiro-projeto/
 ├── main.py              # Arquivo principal da aplicação
 ├── requirements.txt     # Dependências do projeto
-└── README.md           # Este arquivo
+├── run.sh              # Script de execução
+├── README.md           # Este arquivo
+├── GITHUB_SETUP.md     # Instruções para GitHub
+└── .gitignore          # Arquivos ignorados pelo Git
 ```
 
 ## Tecnologias utilizadas
