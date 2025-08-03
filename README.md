@@ -10,14 +10,12 @@ Este é um projeto simples criado com FastAPI para demonstrar uma API básica co
 
 ## Instalação
 
-1. Crie um ambiente virtual (recomendado):
-```bash
-python -m venv venv
-source venv/bin/activate  # No Windows: venv\Scripts\activate
-```
+O projeto funciona diretamente com Python 3 sem necessidade de ambiente virtual.
 
-2. Instale as dependências:
+**Nota:** Se você quiser usar um ambiente virtual, pode criar um:
 ```bash
+python3 -m venv venv
+source venv/bin/activate  # No Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -70,7 +68,7 @@ curl -X GET "http://localhost:8000/health"
 ```
 genai-cursor-primeiro-projeto/
 ├── main.py              # Arquivo principal da aplicação
-├── requirements.txt     # Dependências do projeto
+├── requirements.txt     # Dependências do projeto (opcional)
 ├── run.sh              # Script de execução
 ├── README.md           # Este arquivo
 ├── GITHUB_SETUP.md     # Instruções para GitHub
