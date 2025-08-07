@@ -10,10 +10,10 @@ Este é um projeto simples criado com FastAPI para demonstrar uma API básica co
 
 ## Instalação
 
-O projeto funciona diretamente com Python 3 sem necessidade de ambiente virtual.
+O uso de um ambiente virtual (`venv`) é a maneira recomendada para gerenciar as dependências deste projeto, garantindo um ambiente de desenvolvimento limpo e reprodutível.
 
-### 🔧 Setup Automático
-Execute o script de setup para verificar e instalar dependências:
+### 🔧 Setup Automático (Recomendado)
+O script `setup.sh` automatiza todo o processo de configuração:
 ```bash
 ./setup.sh
 ```

@@ -1,0 +1,3 @@
+se ainda não existir um diretorio test na raiz do projeto, crie esse diretorio
+se não tiverem testes criados para o projeto, crie os respectivos testes
+sempre que criar uma função, crie um test para ela dentro do diretorio test
